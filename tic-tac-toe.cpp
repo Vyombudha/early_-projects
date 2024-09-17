@@ -47,9 +47,8 @@ int main()
     CurrentPlayingBoard = initialBoard; 
     for (int i = 1; i <= BOARD_SIZE * BOARD_SIZE; i++)
     {
-        
+      
         currentPlayer = ((i % 2) != 0) ? 'X' : 'O';
-
         CurrentPlayingBoard = GotoBoard(CurrentPlayingBoard, currentPlayer);
         if (CheckWinner_BigBoard())
         {
